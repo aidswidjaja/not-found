@@ -11,10 +11,7 @@
 </style>
 
 <script>
-var url_string = window.location.href; //window.location.href
-var url = new URL(url_string);
-var param = url.searchParams.get("link");
-var id = document.getElementById("url");
+const param = urlParams.get('link')
 var content = document.createTextNode(param);
 id.appendChild(content);
 console.log(content);
