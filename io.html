@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>oof...</title>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+<style>
+  
+  h1, h2, h3, h4, h5, p, b, ul {font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif}
+  
+</style>
+
+<script>
+var url_string = window.location.href; //window.location.href
+var url = new URL(url_string);
+var param = url.searchParams.get("link");
+var id = document.getElementById("url");
+var content = document.createTextNode(param);
+id.appendChild(content);
+</script>
+
+<body style="margin: 24px; color: #000000; font-family: "Arial";">
+  <h3><strong>404 Not Found</strong></h3>
+  <p>The requested short link located at:</p><br><br>
+  <code id="url"></code><br><br>
+  <p>could not be found. Make sure you've typed the right link in, including any dashes or punctuation.</p>
+  <br>
+  <img src="sad-potato.jpg" />
+</body>
