@@ -25,19 +25,16 @@
   <ul>
     <li>code.adrian.id.au is now <a>death-by-code.adrian.id.au</a></li>
     <li>games.adrian.id.au is now <a>itch.adrian.id.au</a></li>
-  <br>
+  </ul>
   <p>If you're still having trouble, please <a href="mailto:404@adrian.id.au?subject=404%20Not%20Found%20-%20io.adrian.id.au">contact Adrian</a>.</p>
   <br>
   <img src="sad-potato.jpg" style="height: 100px" />
   <h5>adrian.id.au | aidswidjaja</h5>
   
 <script>
-const queryString = window.location.search;
-console.log(queryString);
-const urlParams = new URLSearchParams(queryString);
-const link = urlParams.get('link');
+const url = window.location.href;
 var element = document.getElementById("url");
-var content = document.createTextNode(link);
+var content = document.createTextNode(url);
 element.appendChild(content);
 console.log(content);
 </script>
