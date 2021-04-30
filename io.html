@@ -14,7 +14,8 @@
 const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
-const link = urlParams.get('link')
+const link = urlParams.get('link');
+var id = document.getElementById("url");
 var content = document.createTextNode(link);
 id.appendChild(content);
 console.log(content);
