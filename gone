@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>not found :(</title>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+<style>
+  
+  h1, h2, h3, h4, h5, p, b, ul {font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif}
+  
+</style>
+
+<body style="margin: 24px; color: #000000; font-family: "Arial";">
+  <h2><strong>410 Gone</strong></h2>
+  <p>The requested website located at:</p><br>
+  <code id="url"></code><br><br>
+  <p>doesn't exist anymore. This has occurred because the site has been deleted (usually because Adrian is too poor to keep it up).</p><br>
+  <p>For your reference, the following sites do not exist anymore:</p>
+  <ul>
+    <li>b.adrian.id.au</li>
+    <li>egg.adrian.id.au</li>
+    <li>technet.adrian.id.au</li>
+  </ul>
+  <p>The following sites have been redirected:</p>
+  <ul>
+    <li>code.adrian.id.au is now <a>death-by-code.adrian.id.au</a></li>
+    <li>code.adrian.id.au is now <a>death-by-code.adrian.id.au</a></li>
+  <br>
+  <p>If you're still having trouble, please <a href="mailto:404@adrian.id.au?subject=404%20Not%20Found%20-%20io.adrian.id.au">contact Adrian</a>.</p>
+  <br>
+  <img src="sad-potato.jpg" style="height: 100px" />
+  <h5>io.adrian.id.au | aidswidjaja</h5>
+  
+<script>
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+const link = urlParams.get('link');
+var element = document.getElementById("url");
+var content = document.createTextNode(link);
+element.appendChild(content);
+console.log(content);
+</script>
+</body>
