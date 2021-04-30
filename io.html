@@ -17,13 +17,14 @@ var param = url.searchParams.get("link");
 var id = document.getElementById("url");
 var content = document.createTextNode(param);
 id.appendChild(content);
+console.log(content);
 </script>
 
 <body style="margin: 24px; color: #000000; font-family: "Arial";">
-  <h3><strong>404 Not Found</strong></h3>
+  <h2><strong>404 Not Found</strong></h2>
   <p>The requested shortened link located at:</p><br><br>
   <code id="url"></code><br><br>
   <p>could not be found. Make sure you've typed the right link in, including any dashes or punctuation.</p>
   <br>
-  <img src="sad-potato.jpg" />
+  <img src="sad-potato.jpg" style="height: 100px" />
 </body>
