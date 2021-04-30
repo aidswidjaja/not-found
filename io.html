@@ -15,9 +15,9 @@ const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 const link = urlParams.get('link');
-var id = document.getElementById("url");
+var element = document.getElementById("url");
 var content = document.createTextNode(link);
-id.appendChild(content);
+element.appendChild(content);
 console.log(content);
 </script>
 
