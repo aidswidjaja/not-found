@@ -11,8 +11,11 @@
 </style>
 
 <script>
-const param = urlParams.get('link')
-var content = document.createTextNode(param);
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+const link = urlParams.get('link')
+var content = document.createTextNode(link);
 id.appendChild(content);
 console.log(content);
 </script>
